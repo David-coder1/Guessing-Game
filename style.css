@@ -78,7 +78,7 @@ form #sub:hover {
   width: 400px;
   height: 350px;
   background-color: rgb(4, 184, 239);
-  color: #fbfbfb;
+  color: #cdcaca;
   font-size: 25px;
   margin-bottom: 40px;
 }
@@ -90,7 +90,7 @@ h1 {
 }
 .lowOrHi {
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 #newGame {
   font-size: 39px;
