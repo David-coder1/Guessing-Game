@@ -11,7 +11,7 @@ const lowOrHi = document.querySelector(".lowOrHi");
 const p = document.createElement('p');
 
 let previousGuesses = [];
-let numGuesses = 0;
+let numGuesses = 1;
 let playGame = true;
 
 if (playGame) {
@@ -32,7 +32,7 @@ function ValidateGuess(guess) {
     } else {
         previousGuesses.push(guess);
 
-        if (numGuesses === 2) {
+        if (numGuesses === 3) {
             displayGuesses(guess);
             displayMessage(`Game over! Number was ${randomNumber}`);
             endGame();
@@ -60,7 +60,7 @@ function displayGuesses(guess) {
     userInput.value = '';
     guessSlot.innerHTML += `${guess} `;
     numGuesses++
-    remaining.innerHTML = `${3 - numGuesses} `;
+    remaining.innerHTML = `${4 - numGuesses} `;
 }
 
 function displayMessage(message) {
@@ -72,6 +72,7 @@ function endGame() {
     userInput.setAttribute('disabled', '');
     p.classList.add('button');
     p.innerHTML = `<h1 id="newGame">Start New Game</h1>`
+
     startOver.appendChild(p);
     playGame = false;
     newGame();
@@ -85,7 +86,7 @@ function newGame() {
         numGuesses = 1;
         guessSlot.innerHTML = '';
         lowOrHi.innerHTML = '';
-        remaining.innerHTML = `${11 - numGuesses} `;
+        remaining.innerHTML = `${4 - numGuesses} `;
         userInput.removeAttribute('disabled');
         startOver.removeChild(p);
         playGame = true;

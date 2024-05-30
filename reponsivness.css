@@ -1,0 +1,9 @@
+@media only screen and (max-width: 540px) {
+  body {
+    background-color: rgb(64, 143, 233);
+    width: 100%;
+  }
+  p {
+    color: #ffffff;
+  }
+}

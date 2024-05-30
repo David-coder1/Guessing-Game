@@ -37,7 +37,7 @@ button {
 
 #sub {
   background-color: rgb(255, 0, 174);
-  color: #fbfbfb;
+  color: #ffffff;
   font-weight: 700;
   width: 350px;
   height: 50px;
@@ -54,7 +54,7 @@ form #sub:hover {
 #guessField {
   color: #000;
   width: 386px;
-  height: 70px;
+  height: 40px;
   font-size: 30px;
   border-style: none;
   margin-top: 25px;
@@ -65,7 +65,7 @@ form #sub:hover {
 #guess {
   font-size: 35px;
   margin-top: 90px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
 .guesses {
@@ -84,7 +84,7 @@ form #sub:hover {
 }
 h1 {
   background-color: #cbf318;
-  color: #fcfcfc;
+  color: #ffffff;
   width: 400px;
   text-align: center;
 }
